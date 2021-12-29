@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="07a2abc0-6653-4c68-a49b-9b55cec92db0" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/react_blog/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/getHttpsConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/getHttpsConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/jest/babelTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/jest/babelTransform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/jest/cssTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/jest/cssTransform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/jest/fileTransform.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/jest/fileTransform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/modules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/webpack/persistentCache/createEnvironmentHash.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/webpack/persistentCache/createEnvironmentHash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/config/webpackDevServer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/config/webpackDevServer.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/scripts/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/scripts/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/scripts/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/scripts/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_blog/src/setupTests.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_ts_blog/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/my_project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_ts_blog/src/components/padding.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_ts_blog/src/page/home/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react_ts_blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_ts_blog/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/src/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_ts_blog/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_ts_blog/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_ts_blog/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_ts_blog/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_ts_blog/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +35,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="22aLHJfR47lDjkXq95q4ctt2WGY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/react_ts_blog/src/page" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/react_ts_blog/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/react_ts_blog/src/page" />
+      <recent name="$PROJECT_DIR$/react_ts_blog/src" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -74,7 +78,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640070661613</updated>
-      <workItem from="1640070662751" duration="291000" />
+      <workItem from="1640070662751" duration="2720000" />
+      <workItem from="1640671202191" duration="792000" />
     </task>
     <servers />
   </component>
@@ -91,5 +96,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="581" y="368" key="#ESLint" timestamp="1640671299228">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="581" y="368" key="#ESLint/0.0.1440.900@0.0.1440.900" timestamp="1640671299228" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1640671921426">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1640671921426" />
   </component>
 </project>

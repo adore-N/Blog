@@ -1,4 +1,4 @@
-'use strict';
+
 
 const fs = require('fs');
 const path = require('path');
@@ -69,6 +69,8 @@ const swSrc = paths.swSrc;
 // style files regexes
 const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
+const lessRegex = /\.less$/;
+const lessModuleRegex = /\.module\.less$/;
 const sassRegex = /\.(scss|sass)$/;
 const sassModuleRegex = /\.module\.(scss|sass)$/;
 
@@ -121,49 +123,35 @@ module.exports = function (webpackEnv) {
         options: cssOptions,
       },
       {
+        loader: require.resolve('less-loader'),
+        // options: cssOptions,
+      },
+      {
         // Options for PostCSS as we reference these options twice
         // Adds vendor prefixing based on your specified browser support in
         // package.json
         loader: require.resolve('postcss-loader'),
-        options: {
-          postcssOptions: {
-            // Necessary for external CSS imports to work
-            // https://github.com/facebook/create-react-app/issues/2677
-            ident: 'postcss',
-            config: false,
-            plugins: !useTailwind
-              ? [
-                  'postcss-flexbugs-fixes',
-                  [
-                    'postcss-preset-env',
-                    {
-                      autoprefixer: {
-                        flexbox: 'no-2009',
-                      },
-                      stage: 3,
-                    },
-                  ],
-                  // Adds PostCSS Normalize as the reset css with default options,
-                  // so that it honors browserslist config in package.json
-                  // which in turn let's users customize the target behavior as per their needs.
-                  'postcss-normalize',
-                ]
-              : [
-                  'tailwindcss',
-                  'postcss-flexbugs-fixes',
-                  [
-                    'postcss-preset-env',
-                    {
-                      autoprefixer: {
-                        flexbox: 'no-2009',
-                      },
-                      stage: 3,
-                    },
-                  ],
-                ],
-          },
-          sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
-        },
+        // options: {
+        //   ident: 'postcss',
+        //   plugins: () => [
+        //     require('autoprefixer'),
+        //     require('postcss-px-to-viewport') ({
+        //       unitToConvert: 'px', // 要转化的单位
+        //       viewportWidth: 750, // UI设计稿的宽度
+        //       unitPrecision: 5, // 转换后的精度，即小数点位数
+        //       propList: ['*'], // 指定转换的css属性的单位，*代表全部css属性的单位都进行转换
+        //       viewportUnit: 'vw', // 指定需要转换成的视窗单位，默认vw
+        //       fontViewportUnit: 'vw', // 指定字体需要转换成的视窗单位，默认vw
+        //       selectorBlackList: [], // 指定不转换为视窗单位的类名，
+        //       minPixelValue: 1, // 默认值1，小于或等于1px则不进行转换
+        //       mediaQuery: false, // 是否在媒体查询的css代码中也进行转换，默认false
+        //       replace: true, // 是否转换后直接更换属性值
+        //       exclude: undefined, // 设置忽略文件，用正则做目录名匹配
+        //       include: undefined,
+        //     })
+        //   ],
+        //   // sourceMap: isEnvProduction ? shouldUseSourceMap : isEnvDevelopment,
+        // },
       },
     ].filter(Boolean);
     if (preProcessor) {
@@ -539,6 +527,45 @@ module.exports = function (webpackEnv) {
                   },
                 },
                 'sass-loader'
+              ),
+            },
+            {
+              test: lessRegex,
+              exclude: lessModuleRegex,
+              use: getStyleLoaders(
+                {
+                  importLoaders: 3,
+                  sourceMap: isEnvProduction
+                    ? shouldUseSourceMap
+                    : isEnvDevelopment,
+                  modules: {
+                    mode: 'icss',
+                  },
+                },
+                'less-loader'
+              ),
+              // Don't consider CSS imports dead code even if the
+              // containing package claims to have no side effects.
+              // Remove this when webpack adds a warning or an error for this.
+              // See https://github.com/webpack/webpack/issues/6571
+              sideEffects: true,
+            },
+            // Adds support for CSS Modules, but using SASS
+            // using the extension .module.scss or .module.sass
+            {
+              test: lessModuleRegex,
+              use: getStyleLoaders(
+                {
+                  importLoaders: 3,
+                  sourceMap: isEnvProduction
+                    ? shouldUseSourceMap
+                    : isEnvDevelopment,
+                  modules: {
+                    mode: 'local',
+                    getLocalIdent: getCSSModuleLocalIdent,
+                  },
+                },
+                'less-loader'
               ),
             },
             // "file" loader makes sure those assets get served by WebpackDevServer.

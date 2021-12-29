@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'antd/dist/antd.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './page/home/home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import PaddingBox from "./components/PaddingBox/PaddingBox";
+import MenuHeader from './components/MenuHeader/index'
+import LogoBox from "./components/LogoBox";
+import Fan from './page/fan/fan';
+import Acticle from './page/acticle/acticle';
+import Self from './page/self/self';
+function App(props: any) {  
+    return (
+        <div className="App">
+           <PaddingBox className="PaddingBox">
+            <div className="header_top" style={{height: '100%'}}>
+              <LogoBox className="LogoBox"/>
+              <MenuHeader></MenuHeader>  
+            </div>
+          </PaddingBox>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/home' element={<Home/>}/>
+            <Route path='/acticle' element={<Acticle />}/>
+            <Route path='/fan' element={<Fan />}/>
+            <Route path={`/self`} element={<Self />}/>
+          </Routes>
+        </div>
+    );
 }
 
 export default App;
