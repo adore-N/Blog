@@ -1,8 +1,9 @@
 .MenuHeader {
   height: 100%;
+  display: flex;
   flex: 1;
-  justify-content: space-around;
+  justify-content: center;
   li {
-    flex: 1;
+    width: 20%;
   }
 }

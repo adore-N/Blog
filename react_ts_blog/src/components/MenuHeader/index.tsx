@@ -20,11 +20,11 @@ const MenuHeader = (props: any) => {
     <Menu.Item key="home" icon={<MailOutlined />}>
        首页
     </Menu.Item>
-    <Menu.Item key="acticle"  icon={<AppstoreOutlined />}>
-      文章
+    <Menu.Item key="frontend"  icon={<AppstoreOutlined />}>
+      前端
     </Menu.Item>
-    <Menu.Item key="fan"  icon={<SettingOutlined />}>
-      娱乐
+    <Menu.Item key="algorithm"  icon={<SettingOutlined />}>
+      算法
     </Menu.Item>
     <Menu.Item key="self"  icon={<CalculatorFilled />}>
       我的
