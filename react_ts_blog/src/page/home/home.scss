@@ -1,21 +1,33 @@
 .home {
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
  .content_box {
    margin: 0px 150px;
-   padding-top: 55px;
-   background: #f3f3f3;
-   height: 1000px;
-  
-  display: flex;
   .content {
-    flex: 1;
-    border-radius: 5px;
-    background: #fff;
-  }
-  .tops_message {
-    width: 200px;
-    background: #ccc;
-    margin-left: 15px;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    .title {
+      font-size: 20px;
+      color: #333;
+    }
+    .name {
+      font-weight: 700;
+      font-size: 30px;
+      color: #000;
+      margin: 15px 0px;
+    }
+    .tips {
+      color: #6a8bad;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .intro {
+      display: flex;
+      text-align: start;
+      .card {
+        flex: 1;
+      }
+    }
   }
  }
 }

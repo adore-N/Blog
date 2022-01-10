@@ -1,0 +1,19 @@
+.frontend {
+  
+  .frontend-left {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    bottom: 0;
+    // background: #ccc;
+    width: 200px;
+    overflow: scroll;
+  }
+  .frontend-right {
+    margin-left: 210px;
+    margin-right: 100px;
+    background: red;
+    min-height: 100%;
+    // padding-bottom: 20px;
+  }
+}

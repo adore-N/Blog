@@ -4,6 +4,7 @@ module.exports = {
     require('postcss-px-to-viewport')({
       unitToConvert: 'px',
       viewportWidth: 1040,
+      viewportHeight: 1000,
       unitPrecision: 5,
       propList: ['*'],
       viewportUnit: 'vw',
