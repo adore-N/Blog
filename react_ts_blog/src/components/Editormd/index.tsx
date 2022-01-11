@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import './index.scss'
-
+/**
+ * @author chuyi
+ * @description markdown 编辑组件
+ * @param callback 
+ */
 const requireEditor = (callback: Function): void => {
   // let vm = this;
   //设置全局变量，因为editormd依赖jquery

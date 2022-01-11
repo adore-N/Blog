@@ -1,8 +1,13 @@
 import React, { useEffect } from "react";
 import './index.scss'
-
+/**
+ * @author chuyi
+ * @description markdown markdown -> html 展示组件
+ * @param callback 
+ */
 const requireEditor = (callback: Function) => {
   (window as any).$=(window as any ).jQuery= $;
+  // 引入依赖文件
   $.when(
     $.getScript("./static/editor.md-master/editormd.js"),
     $.getScript("./static/editor.md-master/lib/flowchart.min.js"),
