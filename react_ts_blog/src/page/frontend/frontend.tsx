@@ -12,6 +12,10 @@ interface CurrentArticle {
   order: number
   h1: string
 }
+/**
+ * @author chuyi
+ * @description 前端页面
+ */
 class Frontend extends React.Component{
   state: Readonly<{
     rootSubmenuKeys: string[],
